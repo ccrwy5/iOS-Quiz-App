@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crest" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-pg-6xK">
+                                <rect key="frame" x="50" y="70" width="275" height="547"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phi Delta Theta Quiz App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7V6-Dp-MwB">
+                                <rect key="frame" x="0.0" y="536" width="375" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4lJ-pg-6xK" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="50" id="4lU-Jp-A1F"/>
+                            <constraint firstItem="4lJ-pg-6xK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CR5-xl-DKt"/>
+                            <constraint firstItem="7V6-Dp-MwB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ici-HV-iTK"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="4lJ-pg-6xK" secondAttribute="bottom" constant="50" id="Soq-eh-ENs"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="7V6-Dp-MwB" secondAttribute="bottom" constant="100" id="W4A-RJ-aOb"/>
+                            <constraint firstItem="4lJ-pg-6xK" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="50" id="n4q-gz-jeT"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="7V6-Dp-MwB" secondAttribute="trailing" id="sGf-mW-xhN"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="4lJ-pg-6xK" secondAttribute="trailing" constant="50" id="vSn-YE-gyx"/>
+                            <constraint firstItem="7V6-Dp-MwB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="xep-Hs-J0J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="crest" width="215" height="307"/>
+    </resources>
+</document>
