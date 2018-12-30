@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         optionC.layer.cornerRadius = 16
         optionD.layer.cornerRadius = 16
         
+        progressView.layer.cornerRadius = 6
+        progressView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+        
 
 
         updateQuestion()
@@ -82,9 +85,9 @@ class ViewController: UIViewController {
     }
     
     func updateUI(){
-        
         scoreLabel.text = "Score: \(score)"
         questionCounter.text = "\(questionNumber+1)/ \(10)"
+        
         progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
         
     }
